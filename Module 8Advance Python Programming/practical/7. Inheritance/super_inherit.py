@@ -17,5 +17,6 @@ class Child(Parent):
         print(f"Name: {self.name}\nage: {self.age}")
 
 
-obj = Child("Mitesh",20)
+obj = Child("Piyush",22)
+
 obj.display_info()  
