@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS students (
 # Insert data
 cursor.execute('''
 INSERT INTO students (name, email, age, admission_date)
-VALUES ('Mitesh', 'rathod@gmail.com', 20, CURRENT_DATE)
+VALUES ('Piyush', 'piyush@gmail.com', 22, CURRENT_DATE)
 ''')
 
 # Commit the changes
@@ -41,4 +41,5 @@ for row in cursor.fetchall():
 
 # Close
 cursor.close()
+
 connection.close()
