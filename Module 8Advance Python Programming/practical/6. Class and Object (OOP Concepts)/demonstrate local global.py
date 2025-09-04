@@ -14,4 +14,5 @@ class VariableDemo:
 # Create an object of the class
 demo = VariableDemo("I am an instance variable")
 # Call the method to display variables
+
 demo.show_variables()
