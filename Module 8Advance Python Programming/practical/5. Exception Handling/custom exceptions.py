@@ -1,19 +1,12 @@
-# Define a custom exception class
-class CustomError(Exception):
-    def __init__(self, message):
-        self.message = message
-    def __str__(self):
-        return f'CustomError: {self.message}'
-def check_value(x):
-    if x < 0:
-        # Raise the custom exception with a message
-        raise CustomError("Negative value is not allowed.")
-    elif x == 0:
-        raise CustomError("Zero is not a valid input.")
-    else:
-        print(f"Value {x} is valid.")
+# Write a Python program to print custom exceptions
+
 try:
-    value = int(input("Enter a number: "))
-    check_value(value)
-except CustomError as e:
-    print(e)
+    num = int(input("Enter a positive number: "))
+    if num < 0:
+
+        # Raising a built-in ValueError but with our custom message
+        raise ValueError("Negative numbers are not allowed!")
+    print(f"You entered: {num}")
+
+except ValueError as e:
+    print(f"Custom Exception: {e}")
